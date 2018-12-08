@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+    <head>
+        <title>Charming Lady beauty Center</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    </head>
+    {% load static %}
+<html>
+    <head>
+        <title> Charming Lady beauty Center </title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">    
+    </head>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+   
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ 
+}
+</style>
+</head>
+<body>
+<!-- The navigation menu -->
+<div class="navbar">
+  <a class="active" href="/feedback">Home</a> 
+  <a href="/services">services</a> 
+  <a href="/gallery"">Gallary</a>
+  <a href="/base">Blog</a>
+  
+  
+  
+</div> 
+    <body>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Charming Lady beauty Center</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
